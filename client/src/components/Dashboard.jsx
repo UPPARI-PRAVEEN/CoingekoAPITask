@@ -22,7 +22,7 @@ const Dashboard = () => {
 
   const fetchCoinHistory = async (coinId) => {
     try {
-      const response = await axios(`http://localhost:5000/api/history/${coinId}`);
+      const response = await axios(`https://coingekoapitask-3.onrender.com/api/history/${coinId}`);
       setCoinHistory(response.data);
       setIsModalOpen(true);
     } catch (err) {

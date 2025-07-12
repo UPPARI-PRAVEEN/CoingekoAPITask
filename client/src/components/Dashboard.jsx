@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   const fetchCoinData = async () => {
     try {
-      const response = await axios("http://localhost:5000/api/coins");
+      const response = await axios("https://coingekoapitask-3.onrender.com/api/coins");
       
       setData(response.data);
     } catch (error) {
